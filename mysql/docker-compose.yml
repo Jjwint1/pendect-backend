@@ -10,5 +10,6 @@ services:
       --secure-file-priv="/"
     ports:
       - 3306:3306
+    #MySQL version 5.7 will be used in deployment environment
     image: "docker.io/mysql:5.7"
     restart: always
