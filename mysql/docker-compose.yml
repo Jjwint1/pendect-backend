@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: pendect_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "demo"
+    command:
+      --character-set-server=utf8
+      --secure-file-priv="/"
+    ports:
+      - 3306:3306
+    image: "docker.io/mysql:5.7"
+    restart: always
